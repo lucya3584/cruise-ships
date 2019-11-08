@@ -1,7 +1,8 @@
 class Ship {
-constructor(startingPort) {
+constructor(startingPort, ship) {
     this.startingPort = startingPort
-    
+    this.ship = ship
+
 }
     
 }

@@ -6,7 +6,7 @@ describe('Ship', () => {
     });
     
     it('has a starting port', () => {
-    const ship = new Ship(Dover)
+    const ship = new Ship('Dover')
     expect(ship.startingPort).toBe('Dover')
     });
 
