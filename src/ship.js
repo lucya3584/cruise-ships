@@ -1,13 +1,16 @@
 class Ship {
-constructor(startingPort, ship) {
-    this.startingPort = startingPort
+constructor(currentPort, ship) {
+    this.currentPort = currentPort
     this.ship = ship  
 }
 setSail() {
-    this.startingPort = this.ship  
+    this.currentPort = this.ship  
     }
+
+dock(port) {
+    this.currentPort = port
 }
     
-
+}
 
 module.exports = Ship
