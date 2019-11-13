@@ -1,8 +1,8 @@
-class Itinerary {
-  constructor() {
+function Itinerary(ports) {
+  this.ports = ports;
 
-  }
 }
+
 
 
 
