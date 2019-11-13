@@ -1,6 +1,5 @@
 class Port {
-  constructor(name, port) {
-    this.port = port
+  constructor(name) {
     this.name = name
   }
 }
