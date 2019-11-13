@@ -1,8 +1,8 @@
 class Port {
-constructor(arrivalPort, port) {
-   this.arrivalPort = arrivalPort
-   this.port = port
-}
+  constructor(name, port) {
+    this.port = port
+    this.name = name
+  }
 }
 
 
