@@ -1,10 +1,5 @@
 const Port = require('../src/Port.js');
 
-
-
-const Itinerary = require('../src/itinerary.js')
-
-
 describe('Port', () => {
   it('returns an object', () => {
     expect(new Port()).toBeInstanceOf(Object)
@@ -21,7 +16,16 @@ describe('Port', () => {
 
     expect(port.ships).toContain(ship);
   });
+  it('can remove a ship', () => {
+    const port = new Port('Dover')
+    const titanic = {}
+    const queenMary = {}
+
+    port.addShip(titanic)
+    port.addShip(queenMary)
+    port.removeShip(queenMary)
+
+    expect(port.ships).toEqual([titanic])
+  });
 
 });
-
-let docking = new Port();

@@ -7,16 +7,13 @@ Port.prototype = {
 
   addShip(ship) {
     this.ships.push(ship);
-
-  }
-
-
-}
-
+  },
+  removeShip(ship) {
+    this.ships = this.ships.filter(leavingShip => leavingShip !== ship)
+  },
 
 
-
-
+};
 
 
 
