@@ -1,6 +1,8 @@
 const Port = require('../src/Port.js');
 
-const Itinerary = require('../src/Itinerary.js')
+
+
+const Itinerary = require('../src/itinerary.js')
 
 
 describe('Port', () => {

@@ -1,16 +1,21 @@
-class Ship {
-  constructor(currentPort) {
-    this.currentPort = currentPort
-    this.previousPort = null
+function Ship(itinerary) {
 
-  }
+  this.itinerary = itinerary;
+  this.currentPort = itinerary.ports[0];
+  this.previousPort = null
+}
+Ship.prototype = {
+
   setSail() {
-    this.previousPort = this.currentPort
-    this.currentPort = null
-  }
+    this.previousPort = this.currentPort;
+    this.currentPort = null;
+  },
+  dock() {
+    const itinerary = this.itinerary;
+    const previousPortIndex = itinerary.ports.indexOf(this.previousPort);
 
-  dock(port) {
-    this.currentPort = port
+    this.currentPort = itinerary.ports[previousPortIndex + 1];
+
   }
 
 }
