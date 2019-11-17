@@ -30,6 +30,7 @@ describe('Ship', () => {
     ship.setSail();
 
     expect(ship.currentPort).toBeFalsy()
+    expect(dover.ships).not.toContain(ship)
 
 
   });
